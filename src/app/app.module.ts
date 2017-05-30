@@ -10,6 +10,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,18 @@ import { FooterComponent } from './footer/footer.component';
     HeroesComponent,
     DashboardComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      },
       {
         path: 'heroes',
         component: HeroesComponent
