@@ -1,0 +1,7 @@
+<h1>Server</h1>
+<input type="text" #serverName>
+<button (click)="onAddServer(serverName.value)">Add Server</button>
+<ul *ngFor="let server of servers">
+  <li>{{server.name}} (ID: {{server.id}})</li>
+</ul>
+<button (click)="onSave()">Save Servers</button>

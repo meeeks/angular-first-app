@@ -19,5 +19,13 @@ export var HEROES: Hero[] = [
   {
     "id": 5,
     "name": "Max Tkach Five"
+  },
+  {
+    "id": 6,
+    "name": "Max Tkach Six"
+  },
+  {
+    "id": 7,
+    "name": "Max Tkach Seven"
   }
 ];

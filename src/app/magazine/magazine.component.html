@@ -1,0 +1,11 @@
+<h1>Magazine</h1>
+<input type="text" [(ngModel)]="filteredStatus">
+<br>
+<button (click)="onAddUser()">Add user</button>
+<table>
+  <tr *ngFor="let user of users | filter:filteredStatus:'status'">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.status}}</td>
+  </tr>
+</table>
