@@ -1,8 +1,11 @@
 <h1>Dashboard</h1>
 <button (click)="showAlert()">Функция 1 (Hello World)</button>
-<button (click)="addition()">Функция 2 (10 + 20)</button>
 <button (click)="division()">Функция 3 (500 / 25)</button>
 <button (click)="customMathExpression()">Функция 4 ((1000 + 100) * 5)</button>
+<input type="number" [(ngModel)]="arg1">
+<input type="number" [(ngModel)]="arg2">
+<button (click)="addition(arg1, arg2)">Функция 2 ({{arg1}} + {{arg2}})</button>
+<h2>{{result}}</h2>
 <div>
   <table>
     <tr *ngFor="let post of posts">

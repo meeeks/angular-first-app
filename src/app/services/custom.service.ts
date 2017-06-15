@@ -9,17 +9,15 @@ export class CustomService {
   }
 
   addition(a,b) {
-    return alert(a + b);
+    return a + b;
   }
 
   division(a,b) {
-    return alert(a / b);
+    return a / b;
   }
 
   customMathExpression(a,b,c) {
-    return alert(
-      (a + b) * c
-    );
+    return (a + b) * c;
   }
 
 }

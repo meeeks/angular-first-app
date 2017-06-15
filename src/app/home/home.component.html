@@ -1,8 +1,16 @@
 <h1>This is home page!</h1>
 <table>
+  <input type="text" [(ngModel)]="userName">
+  <!-- <button (click)="onAddServer(serverName.value)">Add Server</button> -->
+  <button (click)="postToServer(userName)">Post to the Server</button>
+  <br>
   <tr *ngFor="let post of posts">
     <th>{{post.id}}</th>
-    <td>{{post.title | customuupercase}}</td>
-    <td>{{post.body}}</td>
+    <td>
+      <input [(ngModel)]="post.name" type="text" name="" value="" [disabled]="post.id !== currentElement">
+    </td>
+    <button (click)="editElement(post.id)">edit</button>
+    <button (click)="deleteElement(post.id)">remove</button>
+    <button (click)="saveElement(post)">save changes</button>
   </tr>
 </table>

@@ -15,21 +15,23 @@ import {PostsService} from '../services/posts.service';
 export class DashboardComponent {
   posts: Post[];
 
+  result: number;
+
   constructor(
     private customService: CustomService,
     private postsService: PostsService) {
 
-    this.postsService.getPosts().subscribe(posts => {
-      this.posts = posts;
-    });
+    // this.postsService.getPosts().subscribe(posts => {
+    //   this.posts = posts;
+    // });
   }
 
   showAlert() {
     this.customService.showAlert();
   }
 
-  addition() {
-    this.customService.addition(10,20);
+  addition(a,b) {
+    this.result = this.customService.addition(a,b);
   }
 
   division() {
