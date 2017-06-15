@@ -11,7 +11,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './crud/crud.component';
 import { MagazineComponent } from './magazine/magazine.component';
 import { ServerComponent } from './server/server.component';
 //pipes

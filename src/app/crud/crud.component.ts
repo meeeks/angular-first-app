@@ -3,8 +3,8 @@ import {PostsService} from '../services/posts.service';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  templateUrl: './crud.component.html',
+  styleUrls: ['./crud.component.css'],
   providers: [PostsService]
 })
 
